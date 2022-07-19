@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Password Generator Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="modal" id="modal">
+        <p>Password coppied to clipboard</p>
+    </div>
+
+    <div class="wrapper">
+
+        <div class="banner">
+
+            <h1>Password Generator</h2>
+
+        </div>
+
+
+        <div class="generate-area">
+
+            <div class="lowercase-switch">
+                <label class="switch">
+                    <p>Lowercase</p>
+                    <input type="checkbox" name="checkbox" value="number" id="lowercase" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="uppercase-switch">
+                <label class="switch">
+                    <p>Uppercase</p>
+                    <input type="checkbox" name="checkbox" value="number" id="uppercase" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="icons-switch">
+                <label class="switch">
+                    <p>Numbers</p>
+                    <input type="checkbox" name="checkbox" value="number" id="number">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="signs-switch">
+                <label class="switch" >
+                    <p>Signs</p>
+                    <input type="checkbox" name="checkbox" value="sign" id="sign">
+                    <span class="slider"></span>
+                </label>
+            </div>  
+
+            <div class="input-area">
+                <label for="pass-length">Length</label>
+                <select id="pass-length" name="pass-length" form="pass-length">
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>                
+                </select>
+            </div>
+
+            <div class="create-btn">
+                <button id="create-pass">Generate</button>
+            </div>            
+        </div>
+
+
+        <div class="result-area">
+            <span id="result"></span>
+            <button class="copy" id="copy">COPY</button>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="main.js"></script>
+    
+</body>
+
+
+</html>
